@@ -1,0 +1,106 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #272b34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+}
+
+.contenedor {
+    width: 400px;
+    height: 75%;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    .logo {
+        width: 50%;
+    }
+    h1 {
+        color: rgb(251, 192, 45);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        input[type=text],
+        input[type=submit] {
+            font-family: "Oswald", sans-serif;
+        }
+        input[type=text] {
+            font-size: 16px;
+            padding: 10px 20px;
+            width: 100%;
+            outline: 0;
+            border-radius: 10px;
+            border: none;
+            margin-bottom: 10px;
+
+        }
+        input[type=submit] {
+            border: none;
+            cursor: pointer;
+            padding: 10px 30px;
+            background-color: #fe1e35;
+            border-radius: 10px;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 700;
+            &:hover {
+                background-color: #ec0b21;
+                transition: all .3s;
+            }
+        }
+    }
+    .alerta {
+        color: #fe1e35;
+        margin-top: 20px;
+        height: 24px;
+    }
+    .personaje {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+        height: 60%;
+        .personaje__box {
+            width: 30%;
+            height: 65%;
+        }
+        img {
+            width: 100%;
+            display: block;
+        }
+        .datos {
+            padding: 20px 30px;
+            background-color: #3d3e43;
+            width: 70%;
+            border-radius: 20px;
+            color: rgb(251, 192, 45);
+            font-size: 18px;
+            strong {
+                color: white;
+            }
+        }
+        &.mostrar {
+            opacity: 1;
+            visibility: visible;
+            transition: all 1s;
+        }
+    }
+}

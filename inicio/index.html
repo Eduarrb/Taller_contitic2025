@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drango Ball Search</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <section class="contenedor">
+        <img src="img/logo.svg" alt="" class="logo">
+        <h1>Busca tu personaje favorito</h1>
+        <form>
+            <input type="text">
+            <input type="submit" value="Buscar">
+        </form>
+        <div class="alerta">
+            Debes ingresar un nombre en la busqueda
+        </div>
+        <div class="personaje">
+            <div class="personaje__box">
+                <img src="https://dragonball-api.com/characters/goku_normal.webp" alt="">
+            </div>
+            <div class="datos">
+                <div>
+                    <strong>Nombre: </strong> Goku
+                </div>
+                <div>
+                    <strong>Base Ki: </strong> 60.000
+                </div>
+                <div>
+                    <strong>Total Ki: </strong> 60.000
+                </div>
+                <div>
+                    <strong>Raza: </strong> Sayayin
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
